@@ -9091,6 +9091,21 @@ return {
       varname = 'p_ttm',
     },
     {
+      abbreviation = 'msh',
+      defaults = { if_true = 50 },
+      desc = [=[
+        Time in milliseconds to wait for a key code sequence to complete. Also
+        used for CTRL-\ CTRL-N and CTRL-\ CTRL-G when part of a command has
+        been typed.
+      ]=],
+      full_name = 'msghistory',
+      -- redraw = { 'ui_option' },
+      scope = { 'global' },
+      short_desc = N_('time out time for key codes in milliseconds'),
+      type = 'number',
+      varname = 'p_msghist',
+    },
+    {
       abbreviation = 'tf',
       defaults = { if_true = true },
       full_name = 'ttyfast',

@@ -980,7 +980,7 @@ static void add_msg_hist_multiattr(const char *s, int len, int attr, bool multil
   }
 
   // Don't let the message history get too big
-  while (msg_hist_len > MAX_MSG_HIST_LEN) {
+  while (msg_hist_len > p_msghist) {
     delete_first_msg();
   }
 
